@@ -1,0 +1,108 @@
+---
+---
+
+@import "{{ site.theme }}";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+/* GLOBAL FIXES FOR MOBILE */
+/* 1. Ensure padding doesn't make elements wider than the screen */
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+/* 2. Prevent the whole page from ever scrolling horizontally */
+body, html {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", "Roboto", "Helvetica Neue", sans-serif;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* HEADINGS */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Open Sans", "Roboto", sans-serif;
+  font-weight: 700;
+  color: #222;
+  
+  /* Prevent long words in titles from breaking layout on tiny screens */
+  overflow-wrap: break-word; 
+  word-wrap: break-word;
+}
+
+/* HIDE DEFAULT THEME ELEMENTS */
+header, footer, .wrapper header {
+  display: none !important;
+}
+
+/* --- MAIN LAYOUT --- */
+
+.wrapper {
+  width: 100% !important;
+  max-width: 900px !important;
+  margin: 0 auto !important;
+  padding: 20px !important;
+  
+  /* Ensure content wraps inside the box */
+  overflow-wrap: break-word; 
+}
+
+section {
+  width: 100% !important;
+  max-width: 100% !important;
+  float: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* --- IMAGE & MEDIA FIXES --- */
+
+/* Ensure images (like your profile pic and badges) shrink if the screen is too small */
+img {
+  max-width: 100% !important;
+  height: auto !important;
+}
+
+/* SPECIFIC PROFILE PIC STYLING */
+#profile-pic {
+    border-radius: 50% !important;
+    object-fit: cover !important;
+    border: 3px solid #eee !important;
+    width: 180px;
+    height: 180px;
+    
+    /* On extremely small screens, allow the profile pic to shrink slightly */
+    max-width: 80% !important; 
+}
+
+/* CODE BLOCKS */
+pre, code {
+    /* Allow code blocks to scroll internally instead of breaking the page */
+    white-space: pre-wrap; 
+    word-break: break-all; 
+    max-width: 100%;
+    overflow-x: auto; 
+}
+
+.btn-cv {
+  display: inline-block;
+  padding: 10px 24px;
+  background-color: #333; /* Dark professional grey */
+  color: #fff !important; /* Force white text */
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 50px; /* Makes it pill-shaped */
+  transition: background 0.3s ease;
+  font-size: 0.95rem;
+  border: 2px solid #333;
+}
+
+.btn-cv:hover {
+  background-color: white;
+  color: #333 !important;
+}
