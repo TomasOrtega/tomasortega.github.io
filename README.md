@@ -25,6 +25,7 @@
     <a href="https://www.linkedin.com/in/tomas-ortega-sc/">
       <img src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
     </a>
+    <a rel="me" href="https://mathstodon.xyz/@tomasortega"><img src="https://img.shields.io/badge/-MASTODON-%232B90D9?style=for-the-badge&logo=mastodon&logoColor=white" alt="Mastodon Verification"></a>
   </p>
 
   <a href="https://tomasortega.github.io/CV.pdf" class="btn-cv">Check out my CV!</a>
@@ -32,5 +33,4 @@
   <br><br>
 </div>
 
-<a rel="me" href="https://mathstodon.xyz/@tomasortega">Mastodon</a>
-		<meta http-equiv="refresh" content="0; url=https://www.tomasortega.net/"> 
+  <meta http-equiv="refresh" content="0; url=https://www.tomasortega.net/">
