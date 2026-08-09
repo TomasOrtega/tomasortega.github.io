@@ -1,0 +1,7 @@
+#!/bin/sh
+set -eu
+
+repository=$(CDPATH='' cd -- "$(dirname -- "$0")/.." && pwd)
+cd "$repository"
+
+exec script/bundle-exec jekyll serve --livereload --host 127.0.0.1 "$@"

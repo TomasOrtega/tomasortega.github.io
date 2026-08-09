@@ -1,2 +1,24 @@
-theme: jekyll-theme-minimal
 title: "Tomàs Ortega"
+description: "Research software engineer working on distributed learning, optimization, information theory, and formalized mathematics."
+author: "Tomàs Ortega"
+lang: en
+url: "https://tomasortega.net"
+strict_front_matter: true
+cv_bibliography: "_bibliography/publications.bib"
+
+markdown: kramdown
+kramdown:
+  input: GFM
+
+sass:
+  style: compressed
+
+exclude:
+  - _bibliography
+  - .github
+  - DEVELOPMENT.md
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - script
+  - vendor

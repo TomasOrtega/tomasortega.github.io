@@ -1,0 +1,15 @@
+<figure class="project-figure">
+  <a href="{{ include.href | escape }}">
+    <img src="{{ include.src | relative_url }}" alt="{{ include.alt | escape }}"{% if include.width %} width="{{ include.width }}"{% endif %}{% if include.title %} title="{{ include.title | escape }}"{% endif %}>
+  </a>
+  {% if include.caption or include.credit %}
+  <figcaption>
+    {% if include.caption %}{{ include.caption }}{% endif %}
+    {% if include.credit %}
+    <span class="project-figure__credit">
+      Image: <a href="{{ include.href | escape }}">{{ include.credit | escape }}</a>{% if include.license %} · <a href="{{ include.license_url | escape }}">{{ include.license | escape }}</a>{% endif %}
+    </span>
+    {% endif %}
+  </figcaption>
+  {% endif %}
+</figure>

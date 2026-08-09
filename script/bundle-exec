@@ -1,0 +1,29 @@
+#!/bin/sh
+set -eu
+
+repository=$(CDPATH='' cd -- "$(dirname -- "$0")/.." && pwd)
+cd "$repository"
+
+expected_ruby=$(tr -d '[:space:]' < .ruby-version)
+actual_ruby=$(ruby -e 'print RUBY_VERSION')
+expected_series=${expected_ruby%.*}
+
+case "$actual_ruby" in
+  "$expected_series".*) ;;
+  *)
+    echo "Ruby $actual_ruby is not in the required $expected_series series. See DEVELOPMENT.md." >&2
+    exit 1
+    ;;
+esac
+
+if ! command -v bundle >/dev/null 2>&1; then
+  echo "Bundler is missing. Run: gem install bundler" >&2
+  exit 1
+fi
+
+if ! bundle check >/dev/null 2>&1; then
+  echo "Dependencies are missing. Run: bundle install" >&2
+  exit 1
+fi
+
+exec bundle exec "$@"

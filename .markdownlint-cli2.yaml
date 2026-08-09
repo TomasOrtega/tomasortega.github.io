@@ -1,0 +1,6 @@
+config:
+  line-length: false
+  first-line-heading: false
+  no-inline-html: false
+  single-title: false
+  no-bare-urls: false
