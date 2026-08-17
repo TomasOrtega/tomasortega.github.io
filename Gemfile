@@ -14,5 +14,5 @@ gem "bigdecimal", "4.1.2"
 gem "webrick", "1.9.2"
 
 group :development do
-  gem "rubocop", "~> 1.88.0", require: false
+  gem "rubocop", "~> 1.89.0", require: false
 end
