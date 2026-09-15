@@ -1,24 +1,60 @@
 ---
 layout: default
 title: Highlighted projects
-description: "Research and side projects spanning distributed learning, formalized mathematics, coding theory, and space communications."
+description: "Research and side projects spanning formalized mathematics, information theory, distributed learning, and space communications."
 permalink: /projects/
 ---
 
 # Highlighted projects
 
-A selection of research and side projects spanning distributed learning, formalized mathematics, coding theory, and space communications.
+A selection of research and side projects spanning formalized mathematics, information theory, distributed learning, and space communications.
 
-## Decentralized online learning without learning rates
+## Capacity Atlas: formalizing the map of information theory
+
+[Capacity Atlas](https://capacityatlas.org/) is a community-maintained registry of channel-capacity problems,
+known bounds, open gaps, formally stated claims, and machine-checked proofs.
+Each entry records a precise communication model, the best-known result or bounds, primary sources, the remaining
+bottleneck, and its formalization status.
+
+This was inspired by Thomas Bloom's https://www.erdosproblems.com/, which was very lively in the mathematics community in 2026.
+Ideally, this will bring the same energy to the information-theory community, where many problems are still open.
+
+
+## AI for mathematics and formalized mathematics
+
+My current work focuses on AI for theorem proving and formalized mathematics.
+At Princeton, I work on research and tool development in AI for mathematics.
+
+I previously organized a group for people in the greater Los Angeles area to learn how to write mathematical
+proofs in Lean.
+I have contributed to [Compfiles](https://github.com/dwrensha/compfiles/pull/65),
+[Sphere-Packing](https://github.com/thefundamentaltheor3m/Sphere-Packing-Lean/pull/134), and
+[OrderedSemigroups](https://github.com/ericluap/OrderedSemigroups), among other projects.
+
+{% include project-figure.html
+  src="/assets/images/lean-logo.svg"
+  alt="Lean logo"
+  width="250"
+  href="https://commons.wikimedia.org/wiki/File:Lean_logo2.svg"
+  title="Lean, public domain, via Wikimedia Commons"
+  credit="Lean, public domain, via Wikimedia Commons"
+%}
+
+## Parameter-free decentralized learning
 
 Tuning learning rates is a major pain point in online learning.
 In the decentralized setting, the problem is harder because nodes must coordinate with one another and may have different optimal learning rates.
 
-In [this work](https://arxiv.org/abs/2510.15644), we proposed a decentralized online learning method that does not require learning rates and achieves sublinear network regret bounds.
+In [our first paper](https://arxiv.org/abs/2510.15644), we proposed a decentralized online learning method that does not require learning rates and achieves sublinear network regret bounds.
 To do this, we extended the [*parameter-free* framework from Francesco Orabona and Dávid Pál](https://arxiv.org/abs/1602.04128) with a gossip consensus scheme.
 We also developed a new betting-function framework that is easier to analyze and that we believe is of independent interest.
 
-Our analysis requires a linear gossip schedule—in learning round *t*, we perform *t* rounds of gossip—to achieve sublinear regret bounds, which is impractical.
+[Follow-up work](https://arxiv.org/abs/2605.27831) introduced DECO-EF, which combines parameter-free
+coin-betting predictions with compressed, difference-based gossip.
+It gives the first expected sublinear network-regret guarantees for parameter-free decentralized online learning
+under compressed communication, to the best of our knowledge.
+
+The first paper's analysis requires a linear gossip schedule—in learning round *t*, we perform *t* rounds of gossip—to achieve sublinear regret bounds, which is impractical.
 In every experiment, however, a constant number of gossip rounds works well.
 We conjecture that the linear schedule is an artifact of our analysis and that a constant schedule is sufficient, but proving this remains an open problem.
 
@@ -93,21 +129,6 @@ Independently, [Mohammad Taha Toghani and César A. Uribe](https://arxiv.org/abs
   href="https://github.com/TomasOrtega/FLSim/blob/main/logistic_regression/results/logistic_regression.png"
   title="Tomàs Ortega, logistic regression with QAFeL"
   caption="Logistic regression with our proposed algorithm. As in the synchronous regime, more local steps mean faster convergence to a more suboptimal point."
-%}
-
-## Proving stuff with Lean
-
-On the side, I enjoy theorem proving with Lean and would like to formalize more of my proofs with it.
-I used to organize a group for people in the greater Los Angeles area to learn how to write mathematical proofs in Lean.
-I have contributed to [Compfiles](https://github.com/dwrensha/compfiles/pull/65), [Sphere-Packing](https://github.com/thefundamentaltheor3m/Sphere-Packing-Lean/pull/134), and [OrderedSemigroups](https://github.com/ericluap/OrderedSemigroups), among other projects.
-
-{% include project-figure.html
-  src="/assets/images/lean-logo.svg"
-  alt="Lean logo"
-  width="250"
-  href="https://commons.wikimedia.org/wiki/File:Lean_logo2.svg"
-  title="Lean, public domain, via Wikimedia Commons"
-  credit="Lean, public domain, via Wikimedia Commons"
 %}
 
 ## Error-correcting codes from generalized quadrangles
