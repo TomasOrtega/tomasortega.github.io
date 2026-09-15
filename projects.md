@@ -16,7 +16,7 @@ known bounds, open gaps, formally stated claims, and machine-checked proofs.
 Each entry records a precise communication model, the best-known result or bounds, primary sources, the remaining
 bottleneck, and its formalization status.
 
-This was inspired by Thomas Bloom's https://www.erdosproblems.com/, which was very lively in the mathematics community in 2026.
+This was inspired by Thomas Bloom's [Erdős Problems website, erdosproblems.com,](https://www.erdosproblems.com/), which was very lively in the mathematics community in 2026.
 Ideally, this will bring the same energy to the information-theory community, where many problems are still open.
 
 ## AI for mathematics and formalized mathematics
