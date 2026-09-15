@@ -26,7 +26,7 @@ Research Software Engineer at Princeton University, working on AI for (formalize
 I received a PhD in Electrical Engineering and Computer Science at UC Irvine, advised by
 [Hamid Jafarkhani](https://www.ece.uci.edu/~hamidj/).
 My thesis was on
-[*Collaborative Learning Under Communication Constraints*](https://www.proquest.com/openview/c296f313d4ef8ab907e40505f83c2995/1?pq-origsite=gscholar&cbl=18750&diss=y).
+[*Collaborative Learning under Communication Constraints*](https://escholarship.org/uc/item/07p462nx).
 
 More broadly, I am interested in optimization, information theory, and AI.
 I also organized a group for people in the greater Los Angeles area to learn how to write mathematical proofs in
@@ -111,6 +111,19 @@ Inactive section retained from the previous CV: Conferences and workshops
 
 ## Open-Source Software
 
+- **Capacity Atlas** ([capacityatlas.org](https://capacityatlas.org/);
+  [github.com/TomasOrtega/CapacityAtlas](https://github.com/TomasOrtega/CapacityAtlas)). A community-maintained
+  registry of channel capacities, known bounds, open gaps, formally stated claims, and machine-checked Lean proofs.
+- **commonly-cited** ([web app](https://commonly-cited.tomasortega.net/);
+  [github.com/TomasOrtega/get-commonly-cited](https://github.com/TomasOrtega/get-commonly-cited)). A web app and
+  command-line tool that resolves bibliographies, expands “et al.,” and identifies the most frequently cited people.
+- **DECO: Decentralized Coin-Betting for Online Learning**
+  ([github.com/TomasOrtega/DECO](https://github.com/TomasOrtega/DECO)). Reproduces the experiments and figures from
+  “Decentralized Parameter-Free Online Learning” {% cite ortega2025decentralized %}.
+- **CAFe: Compressed Aggregate Feedback**
+  ([github.com/TomasOrtega/CAFe](https://github.com/TomasOrtega/CAFe)). Implements the experiments for
+  “Communication Compression for Distributed Learning with Aggregate and Server-Guided Feedback”
+  {% cite ortega2025communicationcompressiondistributedlearning %}.
 - **FLSim: Federated Learning Simulator** ([github.com/TomasOrtega/FLSim](https://github.com/TomasOrtega/FLSim)).
   Reproduces experiments from “Quantized and Asynchronous Federated Learning” {% cite qafel_tsp qafel %}. Built in
   Python, with support for custom compression and asynchronous aggregation.
@@ -121,8 +134,6 @@ Inactive section retained from the previous CV: Conferences and workshops
 - **Noisy Lattice Denoising**
   ([github.com/TomasOrtega/Noisy-lattice-problem](https://github.com/TomasOrtega/Noisy-lattice-problem)). A MATLAB,
   Python, and AMPL solver for a noisy lattice-point recovery problem.
-- **JavaSnake** ([github.com/TomasOrtega/JavaSnake](https://github.com/TomasOrtega/JavaSnake)). A classic Snake game
-  implemented in Java.
 {: .cv-projects}
 
 ## Merits and Awards
