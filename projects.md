@@ -19,7 +19,6 @@ bottleneck, and its formalization status.
 This was inspired by Thomas Bloom's https://www.erdosproblems.com/, which was very lively in the mathematics community in 2026.
 Ideally, this will bring the same energy to the information-theory community, where many problems are still open.
 
-
 ## AI for mathematics and formalized mathematics
 
 My current work focuses on AI for theorem proving and formalized mathematics.
