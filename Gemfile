@@ -10,9 +10,9 @@ gem "kramdown-parser-gfm", "1.1.0"
 
 # Ruby 4 no longer bundles these Jekyll runtime dependencies.
 gem "base64", "0.3.0"
-gem "bigdecimal", "4.1.2"
+gem "bigdecimal", "4.1.3"
 gem "webrick", "1.9.2"
 
 group :development do
-  gem "rubocop", "~> 1.90.0", require: false
+  gem "rubocop", "~> 1.91.0", require: false
 end
