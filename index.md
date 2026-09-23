@@ -14,6 +14,7 @@ permalink: /
 
   <div class="social-links" aria-label="Social profiles">
     <a href="https://scholar.google.com/citations?user=YElSNAIAAAAJ&amp;hl=en"><img src="https://img.shields.io/badge/Google%20Scholar-4285F4?style=for-the-badge&amp;logo=google-scholar&amp;logoColor=white" alt="Google Scholar"></a>
+    <a href="https://orcid.org/0000-0003-1446-2145"><img src="https://img.shields.io/badge/ORCID-A6CE39?style=for-the-badge&amp;logo=orcid&amp;logoColor=white" alt="ORCID"></a>
     <a href="https://github.com/TomasOrtega"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&amp;logo=github&amp;logoColor=white" alt="GitHub"></a>
     <a href="https://bsky.app/profile/tomasortega.net"><img src="https://img.shields.io/badge/Bluesky-0285FF?style=for-the-badge&amp;logo=bluesky&amp;logoColor=white" alt="Bluesky"></a>
     <a href="https://twitter.com/tomas__ortega"><img src="https://img.shields.io/badge/X-000000?style=for-the-badge&amp;logo=x&amp;logoColor=white" alt="X"></a>
