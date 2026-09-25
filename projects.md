@@ -7,14 +7,13 @@ permalink: /projects/
 
 # Highlighted projects
 
-A selection of research and side projects spanning formalized mathematics, information theory, distributed learning, and space communications.
+Topics include formalized mathematics, information theory, distributed learning, and space communications.
 
 ## Capacity Atlas: formalizing the map of information theory
 
-[Capacity Atlas](https://capacityatlas.org/) is a community-maintained registry of channel-capacity problems,
-known bounds, open gaps, formally stated claims, and machine-checked proofs.
-Each entry records a precise communication model, the best-known result or bounds, primary sources, the remaining
-bottleneck, and its formalization status.
+[Capacity Atlas](https://capacityatlas.org/) is a (hopefully) community-maintained registry of channel-capacity problems.
+It has records of know bounds, and can have Lean formalizations that accompany them.
+We also reference the primary sources for each proof.
 
 This was inspired by Thomas Bloom's [Erdős Problems website, erdosproblems.com](https://www.erdosproblems.com/), which was very lively in the mathematics community in 2026.
 Ideally, this will bring the same energy to the information-theory community, where many problems are still open.
