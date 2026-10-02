@@ -175,7 +175,7 @@ As part of this work, we also derived an analytical approximation for the freque
 * [Commonly Cited](https://commonly-cited.tomasortega.net/), a tool that gives the most commonly cited authors in a given paper's references.
 It has a web interface and a command-line interface.
 
-* [claim](https://github.com/TomasOrtega/claim), a claim registry for mathematics, where you can post a hash of some math work while you work on the exposition. 
+* [claim](https://github.com/TomasOrtega/claim), a claim registry for mathematics, where you can post a hash of some math work while you work on the exposition.
 
 * [arxiv-latex-cleaner](https://tomasortega.net/arxiv-latex-cleaner/), a web-based interface to clean up LaTeX source files for arXiv submissions. It's a fork of the original arxiv-latex-cleaner by Google research.
 
