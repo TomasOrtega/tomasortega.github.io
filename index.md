@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Tomàs Ortega
-description: "Research software engineer working on collaborative AI systems under real-world communication constraints."
 permalink: /
 ---
 
@@ -36,7 +35,6 @@ For my undergraduate thesis, I worked with the Communications Architectures and 
 
 ## Research interests
 
-My work bridges theory and practice by accounting for real-world network constraints in collaborative systems.
 I'm broadly interested in **optimization**, **information theory**, and **AI**.
 My dissertation focused on distributed algorithms and privacy-preserving machine learning, particularly over real-world communication networks.
 More recently, I have been working on **AI for theorem proving** and **formalized mathematics**.

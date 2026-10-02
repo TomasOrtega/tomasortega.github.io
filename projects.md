@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Highlighted projects
-description: "Research and side projects spanning formalized mathematics, information theory, distributed learning, and space communications."
 permalink: /projects/
 ---
 
@@ -169,8 +168,17 @@ As part of this work, we also derived an analytical approximation for the freque
   credit="NASA/JPL-Caltech, public domain, via Wikimedia Commons"
 %}
 
-## Just for fun
+## Things I built for fun
 
-I also built a [Snake game](https://github.com/TomasOrtega/JavaSnake) in Java.
+* A [Snake game](https://github.com/TomasOrtega/JavaSnake) in Java.
 
-If you're an NBA nerd, check out [Hardwood Heuristics](https://tomasortega.github.io/Hardwood-Heuristics/), where I look at whether common basketball tropes are backed by data.
+* [Commonly Cited](https://commonly-cited.tomasortega.net/), a tool that gives the most commonly cited authors in a given paper's references.
+It has a web interface and a command-line interface.
+
+* [claim](https://github.com/TomasOrtega/claim), a claim registry for mathematics, where you can post a hash of some math work while you work on the exposition. 
+
+* [arxiv-latex-cleaner](https://tomasortega.net/arxiv-latex-cleaner/), a web-based interface to clean up LaTeX source files for arXiv submissions. It's a fork of the original arxiv-latex-cleaner by Google research.
+
+* [pdf-canary](https://tomasortega.net/pdf-canary/), a tool to insert canary strings into PDFs, with both web and client interfaces.
+
+* A nicer version of [Princeton's Math Department Calendar](https://github.com/TomasOrtega/princeton-math-calendar), with speaker names instead of just the talk titles.
