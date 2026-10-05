@@ -79,6 +79,7 @@ img {
 
 .site-nav {
   display: flex;
+  flex-wrap: wrap;
   width: min(calc(100% - 2rem), var(--width));
   justify-content: center;
   gap: 0.5rem;
