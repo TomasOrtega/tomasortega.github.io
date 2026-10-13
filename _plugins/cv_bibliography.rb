@@ -194,6 +194,7 @@ module CvBibliography
     def link_data
       return doi_link if present?(@fields["doi"])
       return arxiv_link if present?(@fields["eprint"])
+      return [Text.plain(@fields["url"]), "Paper"] if present?(@fields["url"])
 
       [nil, nil]
     end

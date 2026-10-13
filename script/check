@@ -4,4 +4,5 @@ set -eu
 repository=$(CDPATH='' cd -- "$(dirname -- "$0")/.." && pwd)
 cd "$repository"
 
+script/bundle-exec ruby script/check_bibliography.rb
 script/bundle-exec jekyll build --quiet

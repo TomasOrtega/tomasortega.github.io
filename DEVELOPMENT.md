@@ -28,7 +28,7 @@ prek run --all-files
 ```
 
 This runs formatting and syntax checks, RuboCop, ShellCheck, Markdownlint, Actionlint, a zizmor security audit, and a
-production site build. Run `script/check` directly when you only need the Jekyll build.
+production site build. Run `script/check` directly for the bibliography link check and Jekyll build.
 
 ## Deploy
 
