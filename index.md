@@ -10,6 +10,7 @@ permalink: /
   <p><strong>Research Software Engineer</strong><br>
   <a href="https://pli.princeton.edu/">Princeton Language and Intelligence</a><br>
   Princeton University</p>
+  <p><a href="mailto:tomas.ortega@princeton.edu">tomas.ortega@princeton.edu</a></p>
 
   <div class="social-links" aria-label="Social profiles">
     <a href="https://scholar.google.com/citations?user=YElSNAIAAAAJ&amp;hl=en"><img src="https://img.shields.io/badge/Google%20Scholar-4285F4?style=for-the-badge&amp;logo=google-scholar&amp;logoColor=white" alt="Google Scholar"></a>
