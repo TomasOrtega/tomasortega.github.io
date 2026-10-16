@@ -32,7 +32,7 @@ production site build. Run `script/check` directly for the bibliography link che
 
 ## Deploy
 
-The workflow in `.github/workflows/pages.yml` checks pull requests and deploys pushes to `master`.
+The workflow in `.github/workflows/pages.yml` checks pull requests and deploys pushes to `main`.
 
 For the first deployment, open **Settings → Pages** on GitHub and change **Source** from **Deploy from a branch** to **GitHub Actions**. After that, edit the workflow file whenever the deployment process needs to change.
 
