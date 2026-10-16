@@ -5,7 +5,7 @@ permalink: /
 ---
 
 <div class="profile">
-  <img class="profile__photo" src="{{ "/assets/images/tomas-ortega.png" | relative_url }}" alt="Tomàs Ortega" width="180" height="180">
+  <img class="profile__photo" src="https://gravatar.com/avatar/c88c7892877c2beb2018305b5d2d4abb2665914191e9b1098611ff61d8455293?s=360" alt="Tomàs Ortega" width="180" height="180">
   <h1>Tomàs Ortega</h1>
   <p><strong>Research Software Engineer</strong><br>
   <a href="https://pli.princeton.edu/">Princeton Language and Intelligence</a><br>
