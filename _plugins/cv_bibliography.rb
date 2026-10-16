@@ -194,7 +194,7 @@ module CvBibliography
     def link_data
       return doi_link if present?(@fields["doi"])
       return arxiv_link if present?(@fields["eprint"])
-      return [Text.plain(@fields["url"]), "Paper"] if present?(@fields["url"])
+      return url_link if present?(@fields["url"])
 
       [nil, nil]
     end
@@ -209,6 +209,11 @@ module CvBibliography
       ["https://arxiv.org/abs/#{eprint}", "arXiv:#{eprint}"]
     end
 
+    def url_link
+      url = Text.plain(@fields["url"])
+      [url, url.sub(%r{\Ahttps?://(?:www\.)?}i, "")]
+    end
+
     def present?(value)
       value && !Text.plain(value).empty?
     end
@@ -218,7 +223,7 @@ module CvBibliography
   class Renderer
     def initialize(entries)
       @entries = entries.sort_by do |entry|
-        [-year(entry), Text.plain(entry.fields.fetch("author", "")), Text.plain(entry.fields.fetch("title", ""))]
+        [*date_key(entry), Text.plain(entry.fields.fetch("author", "")), Text.plain(entry.fields.fetch("title", ""))]
       end
       @entries_by_key = @entries.to_h { |entry| [entry.key, entry] }
       @numbers = @entries.each_with_index.to_h { |entry, index| [entry.key, index + 1] }
@@ -242,8 +247,10 @@ module CvBibliography
 
     private
 
-    def year(entry)
-      Integer(Text.plain(entry.fields.fetch("year", "0")), exception: false) || 0
+    def date_key(entry)
+      %w[year month day].map do |field|
+        -(Integer(entry.fields.fetch(field, "0"), exception: false) || 0)
+      end
     end
 
     def validate_keys(keys)
