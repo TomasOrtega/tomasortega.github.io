@@ -8,14 +8,24 @@ permalink: /projects/
 
 Topics include formalized mathematics, information theory, distributed learning, and space communications.
 
-## Capacity Atlas: formalizing the map of information theory
+## mini-Lean-agent: a coding-agent baseline for Lean
 
-[Capacity Atlas](https://capacityatlas.org/) is a (hopefully) community-maintained registry of channel-capacity problems.
-It has records of know bounds, and can have Lean formalizations that accompany them.
-We also reference the primary sources for each proof.
+[mini-Lean-agent](https://github.com/TomasOrtega/mini-lean-agent) is a lightweight theorem-proving agent for Lean tasks built on [mini-SWE-agent](https://github.com/SWE-agent/mini-swe-agent).
+Final submissions are verified with [Lean FRO's comparator](https://github.com/leanprover/comparator).
+With this agent, we showed that modern LLMs do not need a complicated agent architecture to solve Lean problems.
 
-This was inspired by Thomas Bloom's [Erdős Problems website, erdosproblems.com](https://www.erdosproblems.com/), which was very lively in the mathematics community in 2026.
-Ideally, this will bring the same energy to the information-theory community, where many problems are still open.
+Our [preprint](https://arxiv.org/abs/2610.17331) was submitted to arXiv on October 12, 2026.
+Similar ideas appeared in independent work around the same time: [ReuF2F](https://arxiv.org/abs/2610.27046), submitted on October 19, introduced [Leanimum-agent](https://github.com/cmu-l3/Leanimum-agent), and [h1: A Taste of the Bitter Lesson in Automated Theorem Proving](https://arxiv.org/abs/2610.35962), submitted on October 25, introduced the h1 agent.
+
+{% include project-figure.html
+  src="/assets/images/mini-lean-agent-workflow.png"
+  alt="Workflow comparison: mini-lean-agent uses bash to edit and check Lean proofs; AxProverBase uses specialized modules and tools."
+  width="650"
+  href="https://arxiv.org/pdf/2610.17331#page=2"
+  title="Agent interfaces in mini-lean-agent and AxProverBase"
+  caption="mini-lean-agent vs the previous simple agent baseline, AxProverBase"
+  credit="mini-Lean-agent preprint, Figure 1"
+%}
 
 ## AI for mathematics and formalized mathematics
 
@@ -36,6 +46,15 @@ I have contributed to [Compfiles](https://github.com/dwrensha/compfiles/pull/65)
   title="Lean, public domain, via Wikimedia Commons"
   credit="Lean, public domain, via Wikimedia Commons"
 %}
+
+## Capacity Atlas: formalizing the map of information theory
+
+[Capacity Atlas](https://capacityatlas.org/) is a (hopefully) community-maintained registry of channel-capacity problems.
+It has records of know bounds, and can have Lean formalizations that accompany them.
+We also reference the primary sources for each proof.
+
+This was inspired by Thomas Bloom's [Erdős Problems website, erdosproblems.com](https://www.erdosproblems.com/), which was very lively in the mathematics community in 2026.
+Ideally, this will bring the same energy to the information-theory community, where many problems are still open.
 
 ## Parameter-free decentralized learning
 

@@ -1,14 +1,18 @@
 # Development
 
-`README.md` is the short GitHub profile. The website is built from `index.md`, `projects.md`, and `cv.md`.
+Edit `index.md`, `projects.md`, and `cv.md` for page content.
+Edit `_bibliography/publications.bib` for publications.
 
 ## Setup
 
-Use Ruby 4.0. `.ruby-version` pins the deployment version; local patch releases in the same series also work.
+Use Ruby 4.0. See `.ruby-version` for the deployment version.
+Use the Bundler version in `Gemfile.lock`.
 
 ```sh
-brew install prek
+brew install openssl@3 prek
+gem install bundler --version 4.0.17 --no-document
 bundle config set --local path .bundle/gems
+bundle config set --local build.eventmachine "--with-ssl-dir=$(brew --prefix openssl@3)"
 bundle install
 prek install
 ```
@@ -19,39 +23,12 @@ prek install
 script/preview
 ```
 
-Open [http://127.0.0.1:4000](http://127.0.0.1:4000). Jekyll rebuilds the website when source files change.
+Open [http://127.0.0.1:4000](http://127.0.0.1:4000). The browser reloads when you save changes.
 
 ## Checks
 
 ```sh
-prek run --all-files
+prek -a --quiet
 ```
 
-This runs formatting and syntax checks, RuboCop, ShellCheck, Markdownlint, Actionlint, a zizmor security audit, and a
-production site build. Run `script/check` directly for the bibliography link check and Jekyll build.
-
-## Deploy
-
-The workflow in `.github/workflows/pages.yml` checks pull requests and deploys pushes to `main`.
-
-For the first deployment, open **Settings → Pages** on GitHub and change **Source** from **Deploy from a branch** to **GitHub Actions**. After that, edit the workflow file whenever the deployment process needs to change.
-
-Keep `CNAME`; it records the custom domain in the deployed artifact.
-
-## Repository map
-
-- `README.md`: GitHub profile
-- `index.md`: website homepage
-- `projects.md`: project descriptions
-- `cv.md`: CV content and source-only inactive entries
-- `_bibliography/publications.bib`: CV publication data
-- `_plugins/cv_bibliography.rb`: CV citation and bibliography renderer
-- `_layouts/default.html`: shared page structure and navigation
-- `_includes/project-figure.html`: shared project image markup
-- `assets/css/style.scss`: website styles
-- `assets/js/print-cv.js`: CV print action
-- `script/preview`: local website server
-- `script/check`: production site build
-- `.pre-commit-config.yaml`: prek checks
-- `.github/dependabot.yml`: dependency update schedule
-- `.github/workflows/pages.yml`: CI and deployment
+This checks the files and builds the site. Use `script/check` to check the bibliography and build the site only.
