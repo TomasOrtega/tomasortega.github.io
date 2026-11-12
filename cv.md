@@ -23,7 +23,7 @@ cv: true
 
 Research Software Engineer at Princeton University, working on AI for (formalized) mathematics.
 
-I received a PhD in Electrical Engineering and Computer Science at UC Irvine, advised by
+I completed my PhD in Electrical Engineering and Computer Science at UC Irvine, advised by
 [Hamid Jafarkhani](https://www.ece.uci.edu/~hamidj/).
 My thesis was on
 [*Collaborative Learning under Communication Constraints*](https://escholarship.org/uc/item/07p462nx).

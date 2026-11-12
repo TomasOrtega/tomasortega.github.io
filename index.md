@@ -27,7 +27,10 @@ permalink: /
 I'm originally from Sant Cugat, near Barcelona, and have lived in Madison, Pasadena, Irvine, and now Philadelphia.
 I'm a Research Software Engineer with the [Princeton Language and Intelligence](https://pli.princeton.edu/) group at Princeton University.
 
-I completed my PhD in Electrical Engineering and Computer Science at UC Irvine under the supervision of [Hamid Jafarkhani](https://www.ece.uci.edu/~hamidj/).
+I completed my PhD in Electrical Engineering and Computer Science at UC Irvine, advised by
+[Hamid Jafarkhani](https://www.ece.uci.edu/~hamidj/).
+My thesis was on
+[*Collaborative Learning under Communication Constraints*](https://escholarship.org/uc/item/07p462nx).
 Previously, I worked at NASA's JPL with [Marc Sanchez-Net](https://scholar.google.com/citations?user=0C0EdK8AAAAJ&hl=en), at the Vector Institute with [Xiaoxiao Li](https://xxlya.github.io/), and at Nokia Bell Labs in Murray Hill with [Sahil Tikale](https://www.nokia.com/people/sahil-tikale/).
 
 Before UCI, I completed a double degree in Mathematics and Electrical Engineering at Universitat Politècnica de Catalunya through the [CFIS program](https://cfis.upc.edu/en), followed by an MS in [Advanced Mathematics and Mathematical Engineering](https://mamme.masters.upc.edu/en) focused on discrete mathematics and information theory.
