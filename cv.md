@@ -138,20 +138,21 @@ Inactive section retained from the previous CV: Conferences and workshops
 
 ## Merits and Awards
 
-- **2026: Henry Samueli Endowed Fellowship**, Samueli School of Engineering at UCI; awarded.
-- **2024: EECS Graduate Student of the Year**, Engineering Student Council at UCI; awarded.
-- **2023: Signal Processing Scholarship**, IEEE Signal Processing Society; awarded.
-- **2023: Early Career Invitation**, ICML Federated Learning Workshop; awarded.
+- **2026: Caltech × SAIR Mathathon Most Creative Award**, Caltech, with Steven Creech for an [interactive exposition](https://tomasortega.net/circulant-Hadamard/) of OpenAI’s proposed proof of the circulant Hadamard conjecture.
+- **2026: Henry Samueli Endowed Fellowship**, Samueli School of Engineering at UCI.
+- **2024: EECS Graduate Student of the Year**, Engineering Student Council at UCI.
+- **2023: Signal Processing Scholarship**, IEEE Signal Processing Society.
+- **2023: Early Career Invitation**, ICML Federated Learning Workshop.
 - **2023: Évariste Galois Prize for Best M.S. Thesis in Catalonia**, Catalan Society of Mathematics; honorable
   mention.
-- **2022: JPL Graduate Fellowship**, NASA Jet Propulsion Laboratory; awarded.
+- **2022: JPL Graduate Fellowship**, NASA Jet Propulsion Laboratory.
 - **2021: Electrical Engineering and Computer Science Department Fellowship**, Samueli School of Engineering at
-  UCI; awarded.
-- **2021: Balsells Graduate Fellowship**, Balsells Program; awarded.
+  UCI.
+- **2021: Balsells Graduate Fellowship**, Balsells Program.
 - **2018-2020: Google Hash Code**, 2nd, 1st, and 1st team in Spain; 171st, 75th, and 53rd globally.
 - **2018: Kernel Analytics Datathon**, 2nd place for classifying Parkinson’s disease symptom onset from sensor
   data.
-- **2015: CFIS Scholarship**, CFIS; awarded.
+- **2015: CFIS Scholarship**, CFIS.
 {: .cv-entries .cv-awards}
 
 {% comment %}
