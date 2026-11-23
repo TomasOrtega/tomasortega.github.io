@@ -1,0 +1,73 @@
+name: Refresh portrait
+
+on:
+  schedule:
+    - cron: '17 4 * * *'
+      timezone: America/New_York
+
+permissions: {}
+
+jobs:
+  refresh:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+    outputs:
+      changed: ${{ steps.update.outputs.changed }}
+    steps:
+      - name: Check out main
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: main
+          persist-credentials: false
+
+      - name: Update portrait if changed
+        id: update
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          portrait=$(mktemp)
+          trap 'rm -f "$portrait"' EXIT
+          curl --fail --silent --show-error --location --proto '=https' --proto-redir '=https' \
+            --max-time 30 --max-filesize 2097152 --output "$portrait" \
+            'https://gravatar.com/avatar/c88c7892877c2beb2018305b5d2d4abb2665914191e9b1098611ff61d8455293?s=360&d=404'
+
+          case "$(file --brief --mime-type "$portrait")" in
+            image/png) extension=png ;;
+            image/jpeg) extension=jpg ;;
+            image/gif) extension=gif ;;
+            image/webp) extension=webp ;;
+            *) echo '::error::Gravatar returned an unsupported image'; exit 1 ;;
+          esac
+
+          target="assets/images/portrait.$extension"
+          if cmp -s "$portrait" "$target"; then
+            exit 0
+          fi
+
+          git rm --ignore-unmatch -- 'assets/images/portrait.*'
+          mkdir -p assets/images
+          install -m 644 "$portrait" "$target"
+          git add -- "$target"
+          git -c user.name='github-actions[bot]' \
+            -c user.email='41898282+github-actions[bot]@users.noreply.github.com' \
+            commit -m 'chore: refresh portrait'
+          git -c credential.helper= -c 'credential.helper=!gh auth git-credential' \
+            push origin HEAD:refs/heads/main
+          echo 'changed=true' >> "$GITHUB_OUTPUT"
+
+  deploy:
+    needs: refresh
+    if: needs.refresh.outputs.changed == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      actions: write
+    steps:
+      # Pushes made with GITHUB_TOKEN do not trigger the Pages workflow.
+      - name: Start Pages deployment
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run pages.yml --repo "$GITHUB_REPOSITORY" --ref main
