@@ -5,7 +5,7 @@ source "https://rubygems.org"
 # Match the GitHub Pages Jekyll and Markdown versions used by this site.
 gem "jekyll", "4.4.1"
 gem "jekyll-sass-converter", "3.1.0"
-gem "kramdown", "2.5.2"
+gem "kramdown", "2.6.1"
 gem "kramdown-parser-gfm", "1.1.0"
 
 # Ruby 4 no longer bundles these Jekyll runtime dependencies.
